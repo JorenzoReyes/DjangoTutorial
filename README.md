@@ -1,25 +1,49 @@
-#Create a venv 
-"py -m venv .venv
+# Django Tutorial Project
 
-#How to run a virtual env
-".venv/Scripts/activate"
+This project demonstrates a basic Django setup. Follow the steps below to get started.
 
-#install requirements
-"pip install -r requirements.txt"
+## 1. Create a Virtual Environment
+```powershell
+py -m venv .venv
+```
 
-#deactivate the virtual env
-"deactivate"
+## 2. Activate the Virtual Environment
+```powershell
+.venv\Scripts\activate
+```
 
-#install django
-"py -m pip install Django"
+## 3. Install Requirements
+```powershell
+pip install -r requirements.txt
+```
 
-#Check django version
-"py" to enter launch python
-"print(django.get_version())" to print the version of django
-"quit()" to exit python
+## 4. Deactivate the Virtual Environment
+```powershell
+deactivate
+```
 
-#To create a Django project
-"django-admin startproject [nameofproject]"
+## 5. Install Django (if needed)
+```powershell
+py -m pip install Django
+```
 
-#To run app
-"py manage.py runserver"
+## 6. Check Django Version
+```powershell
+py
+```
+Then, in the Python shell:
+```python
+import django
+print(django.get_version())
+```
+Type `quit()` to exit Python.
+
+## 7. Create a Django Project
+```powershell
+django-admin startproject [nameofproject]
+```
+
+## 8. Run the Development Server
+```powershell
+py manage.py runserver
+```
